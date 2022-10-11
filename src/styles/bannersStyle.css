@@ -1,0 +1,8 @@
+.bannerOne {
+    /* background-image: linear-gradient(270deg, rgba(131, 58, 180, 0) 34%, rgba(6, 6, 6, 0.7318277652858018) 81%), url('https://info.ehl.edu/hubfs/Blog-EHL-Insights/Blog-Header-EHL-Insights/business-creativity.jpg'); */
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
