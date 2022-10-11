@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Button from '../JsonData/Button';
 import Banner1 from './../Banners/Banner1';
 import {  toast } from 'react-toastify';
 
 export default function ButtonOne() {
-    const notify = (e) => toast(e);
+
     function copyDivToClipboard(codeBoard) {
         var copyText = document.getElementById(codeBoard);
         navigator.clipboard.writeText(copyText.value).then((done) => {
-            notify.success('Has been copied !');
+            toast.success('Has been copied !');
         }).catch((err) => {
-            notify.error('Oops Something has been gone wrong  !');
+            toast.error('Oops Something has been gone wrong  !');
         });
     }
 

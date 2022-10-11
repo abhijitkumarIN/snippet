@@ -5,15 +5,25 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter } from 'react-router-dom';
-import Footer from './Components/Footer/Footer';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-    <ToastContainer/>
+  <BrowserRouter>
+    <ToastContainer 
+    position="top-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+/>
     <Navbar />
     <App />
     </BrowserRouter>

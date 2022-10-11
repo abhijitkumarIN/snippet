@@ -49,7 +49,7 @@ export default function GlassMorphism() {
         document.execCommand("copy");
         window.getSelection().removeAllRanges();// to deselect
         var btn = document.getElementById(copybtn)
-        if (btn.innerText == 'Copy') {
+        if (btn.innerText === 'Copy') {
             btn.innerText = 'Copied'
         }
         else {

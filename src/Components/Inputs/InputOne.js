@@ -1,11 +1,15 @@
 import React from 'react'
 import Inputs from '../JsonData/Inputs'
 import Banner1 from '../Banners/Banner1';
+import {  toast } from 'react-toastify';
 export default function InputOne() {
     function copyDivToClipboard(codeBoard) {
         var copyText = document.getElementById(codeBoard);
-        navigator.clipboard.writeText(copyText.value);
-        alert('has been copied here ')
+        navigator.clipboard.writeText(copyText.value).then((done) => {
+            toast.success('Has been copied !');
+        }).catch((err) => {
+            toast.error('Oops Something has been gone wrong  !');
+        });
     }
   return (
     <>

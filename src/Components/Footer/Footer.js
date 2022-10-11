@@ -13,7 +13,6 @@ export default function Footer({ footer }) {
                     ))
                   }
                 </div>
-
               </div>
               <div >
                 <div className="text-white font-sm  text-center">

@@ -25,12 +25,13 @@ App() {
     ,
     {
       icon: 'https://img.icons8.com/fluency/48/000000/mail.png',
-      link: ''
+      link: 'lenwoper@gmail.com'
     },
     {
       icon: 'https://img.icons8.com/color/48/000000/twitter--v1.png',
-      link: ''
+      link: 'https://twitter.com/the___abhijeet'
     },
+    
     {
       icon: 'https://img.icons8.com/color/48/000000/instagram-new--v1.png',
       link: ''
