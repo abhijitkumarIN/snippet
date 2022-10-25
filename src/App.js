@@ -13,7 +13,7 @@ import Footer from './Components/Footer/Footer';
 import BoxShadow from './Components/BoxShadow/BoxShadow';
 import InputOne from './Components/Inputs/InputOne';
 import GlassMorphism from './Components/GlassMorphism/GlassMorphism';
-
+import ColorPlates from './Components/ColorPlates/ColorPlates';
 function 
 App() {
 
@@ -41,13 +41,12 @@ App() {
 
   return (
     <div className="">
-
-  
         <Routes>
           <Route path='/' element={<ButtonOne />} />
           <Route path='/shadow' element={<BoxShadow />} /> 
           <Route path='/inputs' element={<InputOne />} /> 
-          <Route path='/glassmorphism' element={<GlassMorphism />} /> 
+          <Route path='/glassmorphism' element={<GlassMorphism />} />
+          <Route path="/color-palettes"  element={<ColorPlates/>}/>
           <Route path='*' element={<ButtonOne />} />
         </Routes>
       <Footer footer={footerData}/>

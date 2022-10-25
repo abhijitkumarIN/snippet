@@ -10,13 +10,21 @@ export default function BoxShadow() {
         }).catch((err) => {
             toast.error('Oops Something has been gone wrong  !');
         });
+    }
 
-
+    const props={
+        img:'https://images.pexels.com/photos/390659/pexels-photo-390659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        titleOne:"Elevate",
+        titleTwo:"your",
+        titleThird:"productivity",
+        articles:"Get beautiful css snippet of various Components\
+        soon you 'll be able to find out here input box css , color plates , box shadow and Glassmorphism generator \
+        so",
+        suggestion:"Ctrl+D 🟡"
     }
     return (
-        <>
-            <Banner1 />
-
+        <React.Fragment>
+            <Banner1 {...props} />
             <div className='grid lg:grid-cols-6 md:grid-cols-6 grid-cols-2 grid-gap-1'>
                 {
                     Shadows ?
@@ -29,6 +37,6 @@ export default function BoxShadow() {
                         : ''
                 }
             </div>
-        </>
+        </React.Fragment>
     )
 }

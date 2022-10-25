@@ -1,3 +1,4 @@
+import React from "react";
 import GlassMorphism from "./GlassMorphism/GlassMorphism"
 import ButtonOne from "./Buttons/ButtonOne"
 import BoxShadow from "./BoxShadow/BoxShadow"
@@ -15,13 +16,13 @@ export default function Layout() {
     }
   ]
   return (
-    <>
+    <React.Fragment>
       <Footer  footer={footerData}/>
       <Banner1 />
       <GlassMorphism />
       <ButtonOne />
       <BoxShadow />
       <InputOne />
-    </>
+    </React.Fragment>
   )
 }
