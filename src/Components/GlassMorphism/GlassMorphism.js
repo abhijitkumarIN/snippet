@@ -118,21 +118,21 @@ export default function GlassMorphism() {
                             <input type="color" onChange={(e) => functionSec(e)} />
                             <input type="url" onChange={(e) => userImage(e)} placeholder="Remote Image url" />
                             <div>
-                                <lable htmlFor="opacity" className="lg:text-sm md:text-sm  text-xs">Opacity </lable>
+                                <label htmlFor="opacity" className="lg:text-sm md:text-sm  text-xs">Opacity </label>
                                 <br />
                                 <div className="slidecontainer">
                                     <input onChange={opacityChange} className="slider" value={detailState.opacitySet * 100} type="range" name="opacity" min={1} max={100} id="opacityID" />
                                 </div>
                             </div>
                             <div>
-                                <lable htmlFor="blur " className="lg:text-sm md:text-sm  text-xs">Blur </lable>
+                                <label htmlFor="blur " className="lg:text-sm md:text-sm  text-xs">Blur </label>
                                 <br />
                                 <div className="slidecontainer">
                                     <input onChange={blurChange} className="slider" type="range" name="blur" min={1} max={100} id="blurID" />
                                 </div>
                             </div>
                             <div>
-                                <lable htmlFor="radius" className="lg:text-sm md:text-sm  text-xs">Border Radius </lable>
+                                <label htmlFor="radius" className="lg:text-sm md:text-sm  text-xs">Border Radius </label>
                                 <br />
                                 <div className="slidecontainer">
                                     <input onChange={borderRadiusnChange} type="range" className='slider' name="radius" min={1} max={100} id="radiusID" />
