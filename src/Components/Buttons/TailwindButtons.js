@@ -3,7 +3,6 @@ import { toast } from "react-toastify";
 import buttons from "../JsonData/tw-buttons";
 
 function TailwindButton() {
-    console.log(buttons);
     const props = {
         img: "https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         titleOne: "Elevate",
