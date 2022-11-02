@@ -14,7 +14,7 @@ import InputOne from "./Components/Inputs/InputOne";
 import GlassMorphism from "./Components/GlassMorphism/GlassMorphism";
 import ColorPlates from "./Components/ColorPlates/ColorPlates";
 import Navbar from "./Components/Navbar/Navbar";
-import TailwindButton from "./Components/Buttons/TailwindButtons";
+import TailwindButtons from "./Components/Buttons/TailwindButtons";
 function App() {
     const footerData = [
         {
@@ -46,7 +46,7 @@ function App() {
             <main className="flex-1">
                 <Routes>
                     <Route path="/" element={<ButtonOne />} />
-                    <Route path="/tw-buttons" element={<TailwindButton />} />
+                    <Route path="/tw-buttons" element={<TailwindButtons />} />
                     <Route path="/shadow" element={<BoxShadow />} />
                     <Route path="/inputs" element={<InputOne />} />
                     <Route path="/glassmorphism" element={<GlassMorphism />} />
