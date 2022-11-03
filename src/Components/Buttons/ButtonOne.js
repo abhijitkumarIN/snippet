@@ -31,7 +31,7 @@ export default function ButtonOne() {
             <div className="lg:px-5 md:px-3 px-2 py-8 grid lg:grid-cols-6 md:grid-cols-6 grid-cols-2 gap-5">
                {Button
                     ? Button.map((btnData, index) => (
-                          <div key={index} className="grid ">
+                          <div key={index} className="grid my-2 ">
                               <div className="m-auto">
                                   <button
                                       onClick={() =>
