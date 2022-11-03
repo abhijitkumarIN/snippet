@@ -6,7 +6,7 @@ export default function InputOne() {
     function copyDivToClipboard(codeBoard) {
         var copyText = document.getElementById(codeBoard);
         navigator.clipboard.writeText(copyText.value).then((done) => {
-            toast.success('Has been copied !');
+            toast.success('Copied !');
         }).catch((err) => {
             toast.error('Oops Something has been gone wrong  !');
         });

@@ -9,7 +9,7 @@ export default function ButtonOne() {
         navigator.clipboard
             .writeText(copyText.value)
             .then((done) => {
-                toast.success("Has been copied !");
+                toast.success("Copied !");
             })
             .catch((err) => {
                 toast.error("Oops Something has been gone wrong  !");
@@ -28,10 +28,10 @@ export default function ButtonOne() {
     return (
         <div>
             <Banner1 {...props} />
-            <div className="grid lg:grid-cols-8 md:grid-cols-8 grid-cols-2">
-                {Button
+            <div className="lg:px-5 md:px-3 px-2 py-8 grid lg:grid-cols-6 md:grid-cols-6 grid-cols-2 gap-5">
+               {Button
                     ? Button.map((btnData, index) => (
-                          <div key={index} className="grid my-6">
+                          <div key={index} className="grid ">
                               <div className="m-auto">
                                   <button
                                       onClick={() =>

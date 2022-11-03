@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { BsGithub } from "react-icons/bs";
+import { IconContext } from "react-icons";
 const Navbar = () => {
     const [toggle, Setoggle] = React.useState(false);
 
@@ -58,29 +60,33 @@ const Navbar = () => {
                         <ul className="hidden md:flex">
                             {navlink
                                 ? navlink?.map((item, index, arr) => (
-                                      <li className="text-lg pr-8 " key={index}>
-                                          <span
-                                              className="transition duration-300 focus:outline-none focus:text-white focus:underline hover:underline hover:text-white"
-                                              style={{ textUnderlineOffset: 8 }}
-                                          >
-                                              <NavLink
-                                                  to={item.link}
-                                                  className={({ isActive }) =>
-                                                      isActive
-                                                          ? "text-white underline "
-                                                          : ""
-                                                  }
-                                              >
-                                                  {item.name}
-                                              </NavLink>
-                                          </span>
-                                      </li>
-                                  ))
+                                    <li className="text-lg pr-8 " key={index}>
+                                        <span
+                                            className="transition duration-300 focus:outline-none focus:text-white focus:underline hover:underline hover:text-white"
+                                            style={{ textUnderlineOffset: 8 }}
+                                        >
+                                            <NavLink
+                                                to={item.link}
+                                                className={({ isActive }) =>
+                                                    isActive
+                                                        ? "text-white underline "
+                                                        : ""
+                                                }
+                                            >
+                                                {item.name}
+                                            </NavLink>
+                                        </span>
+                                    </li>
+                                ))
                                 : ""}
                         </ul>
                     </div>
-                    <div className="hidden md:flex">
-                        <span></span>
+                    <div className="hidden md:flex cursor-pointer pr-3" title="Github Link">
+                        <IconContext.Provider value={{ color: "white", className: "text-3xl" }}>
+                            <span onClick={() => window?.open("https://github.com/lenwoper/snippet")}>
+                                <BsGithub />
+                            </span>
+                        </IconContext.Provider>
                     </div>
                 </div>
                 {toggle && (
@@ -109,24 +115,7 @@ const Navbar = () => {
                     </div>
                 )}
             </nav>
-
-            {/* <div className="bg-[#030b20ce] py-2 px-1">
-        <div className="grid grid-cols-12">
-          <div className="col-span-2">🟡</div>
-          <div className="lg:col-span-6 md:col-span-6 col-span-9">
-            <div className="grid grid-cols-4">
-              { navlink?
-                navlink.map((item, index, arr) => (
-                  <div className=" md:text-sm lg:text-sm text-xs mx-1 text-center" key={index}><NavLink to={item.link} className={({isActive})=> isActive?'text-white font-semibold underline' :''}>{item.name}</NavLink></div>
-                ))
-                :''
-              }
-            </div>
-          </div>
-          <div className="lg:col-span-4 md:col-span-4 col-span-2"></div>
-        </div>
-      </div> */}
-        </React.Fragment>
+        </React.Fragment >
     );
 };
 export default Navbar;

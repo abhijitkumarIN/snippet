@@ -17,7 +17,7 @@ function TailwindButtons() {
         navigator.clipboard
             .writeText(class_names)
             .then(() => {
-                toast.success("Has been copied!");
+                toast.success("Copied!");
             })
             .catch((err) => {
                 toast.error("Oops Something has been gone wrong  ! " + err);
@@ -27,7 +27,8 @@ function TailwindButtons() {
     return (
         <div>
             <Banner1 {...props} />
-            <div className="flex flex-wrap p-16 gap-16">
+            <div className="lg:px-5 md:px-3 px-2 py-8 grid lg:grid-cols-6 md:grid-cols-6 grid-cols-2 gap-10">
+            
                 {buttons.map((btn, index) => (
                     <button
                         key={index}

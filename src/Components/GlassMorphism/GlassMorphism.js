@@ -42,7 +42,7 @@ export default function GlassMorphism() {
         window.getSelection().addRange(range); // to select text
         document.execCommand("copy");
         window.getSelection().removeAllRanges(); // to deselect
-        toast.success("has been copied ");
+        toast.success("Copied ");
     }
 
     function functionSec(e) {
@@ -255,11 +255,7 @@ export default function GlassMorphism() {
                         </div>
                         <div className="p-2 mt-3">
                             <button
-                                className="bg-blue-500 shadow-lg uppercase hover:shadow-blue-500/50 px-4 py-2 rounded text-base text-white"
-                                style={{
-                                    width: "100%",
-                                    border: "1px solid  balck",
-                                }}
+                                className="w-full rounded-sm shadow-lg bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 roundede"
                                 onClick={() =>
                                     copyDivToClipboard("codeBoard1", "copybtn1")
                                 }
