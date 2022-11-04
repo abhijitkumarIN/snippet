@@ -42,12 +42,12 @@ const Navbar = () => {
                             hello_universe
                         </h1>
                     </div>
-                    <div className="md:hidden block absolute top-4 right-8">
+                    <div className="lg:hidden block absolute top-4 right-8">
                         <button
                             aria-label="navigation"
                             type="button"
                             onClick={() => Setoggle(!toggle)}
-                            className="md:hidden text-gray-200 transition duration-300 focus:outline-none focus:text-white hover:text-white text-lg font-semibold "
+                            className="lg:hidden text-gray-200 transition duration-300 focus:outline-none focus:text-white hover:text-white text-lg font-semibold "
                         >
                             {toggle ? (
                                 <span>&times;</span>
@@ -56,8 +56,8 @@ const Navbar = () => {
                             )}{" "}
                         </button>
                     </div>
-                    <div className="hidden md:flex">
-                        <ul className="hidden md:flex">
+                    <div className="hidden lg:flex">
+                        <ul className="hidden lg:flex">
                             {navlink
                                 ? navlink?.map((item, index, arr) => (
                                     <li className="text-lg pr-8 " key={index}>
@@ -81,7 +81,7 @@ const Navbar = () => {
                                 : ""}
                         </ul>
                     </div>
-                    <div className="hidden md:flex cursor-pointer pr-3" title="Github Link">
+                    <div className="hidden lg:flex cursor-pointer pr-3" title="Github Link">
                         <IconContext.Provider value={{ color: "white", className: "text-3xl" }}>
                             <span onClick={() => window?.open("https://github.com/lenwoper/snippet")}>
                                 <BsGithub />

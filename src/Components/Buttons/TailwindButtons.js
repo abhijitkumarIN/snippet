@@ -27,7 +27,7 @@ function TailwindButtons() {
     return (
         <div>
             <Banner1 {...props} />
-            <div className="lg:px-5 md:px-3 px-2 py-8 grid lg:grid-cols-6 md:grid-cols-6 grid-cols-2 gap-10">
+            <div className="lg:px-5 lg:px-3 px-2 py-8 grid lg:grid-cols-6 lg:grid-cols-6 grid-cols-2 gap-10">
             
                 {buttons.map((btn, index) => (
                     <button
