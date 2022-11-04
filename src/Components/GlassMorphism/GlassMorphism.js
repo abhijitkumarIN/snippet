@@ -123,7 +123,9 @@ export default function GlassMorphism() {
                                             className="grid grid-cols-8 py-2"
                                             style={{
                                                 borderBottom:
-                                                    "1px solid #ffffff45 ",
+                                                    i < 3
+                                                        ? "1px solid #ffffff45"
+                                                        : "",
                                                 overflow: "hidden",
                                             }}
                                         >
